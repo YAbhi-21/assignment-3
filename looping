@@ -1,0 +1,89 @@
+// Ques 1 - For the given JSON iterate over all for loops (for, for in, for of, forEach)
+//im taking my own data coz i cant find the given data//
+ let objdata = [{
+     "name" : "aman",
+     "age" : 10,
+    "class" : 5 ,
+    "roll no" : 1,
+    },{
+        "name" : "Raman",
+        "age" : 11,
+       "class" : 6 ,
+       "roll no" : 2,
+    },{
+        "name" : "Suman",
+        "age" : 12,
+       "class" : 7 ,
+       "roll no" : 4,
+    },{
+        "name" : "hero",
+        "age" : 13,
+       "class" : 8 ,
+       "roll no" : 5,
+    },{
+        "name" : "ritesh",
+        "age" : 14,
+       "class" : 9 ,
+       "roll no" : 6,
+    },{
+        "name" : "dhani",
+        "age" : 15,
+       "class" : 10,
+       "roll" : 7,
+    }];
+      
+    //1 - for in loop -
+    for (let i in objdata){
+        console.log(objdata[i]);
+    }
+    //output - 
+    // {name: 'aman', age: 10, class: 5, roll no: 1}
+    // {name: 'Raman', age: 11, class: 6, roll no: 2}
+    // {name: 'Suman', age: 12, class: 7, roll no: 4}
+    // {name: 'hero', age: 13, class: 8, roll no: 5}
+    // {name: 'ritesh', age: 14, class: 9, roll no: 6}
+    // {name: 'dhani', age: 15, class: 10, roll no: 7}
+
+    // for getting only value as output we type code as 
+    //console.log(objdata[i].name , objdata[i].age);
+
+    //2 - for of loop -
+     for (let i of objdata){
+         console.log(i);         //by this we will get same output as above 
+     }
+
+     //to get only value as output we write the output
+     for (let i of objdata){
+        console.log(i.name,i.age,i.class);        //for this output is - aman 10 5
+                                                                     //  Raman 11 6
+                                                                     //  Suman 12 7
+                                                                     //  hero 13 8
+                                                                     // ritesh 14 9
+                                                                     // dhani 15 10
+    }
+
+    //3 - for each loop -
+     objdata.forEach ( function(i){
+         console.log(i.name,i.age,i.class);       //for this output is - aman 10 5
+                                                                     //  Raman 11 6
+                                                                     //  Suman 12 7
+                                                                     //  hero 13 8
+                                                                     // ritesh 14 9
+                                                                     // dhani 15 10
+     });
+     //4 - for loop -
+     for (let i = 0; i <objdata.length; i++){
+         console.log(objdata[i]);                 //this will give output with key n value both.
+     }
+
+    //to get only value as output without key we write code as-
+     for (let i = 0; i <objdata.length; i++){
+         console.log(objdata[i].name,objdata[i].age); 
+     } 
+    //  output gonna be-
+    //  aman 10
+    //  Raman 11
+    //  Suman 12
+    // hero 13
+    // ritesh 14
+    //  dhani 15
