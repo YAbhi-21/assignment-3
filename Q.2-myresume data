@@ -1,0 +1,65 @@
+//Ques 2 - Create your own resume data in JSON format?-
+
+let myresume = [{
+    "basics": [{
+      "name": "Abhishek",
+      "label": "Programmer",
+      "image": "",
+      "email": "abhishekkumaryadav291@gmail.com",
+      "phone": "8707069527",
+      "url": "https://github.com/YAbhi-21",
+      "location":[{
+        "address": "kuinkol",
+        "postalCode": "272173",
+        "city": "khalilabad",
+        "countryCode": "+91",
+        "region": "Asia"
+      }],
+      "profiles": [{
+        "network": "linkedin",
+        "username": "abhishek-class",
+        "url": "https://www.linkedin.com/in/abhishek-class-9280b414b/"
+      }],
+    
+    "education": [{
+      "institution": "BBDEC ",
+      "url": "https://bbdec.com/",
+      "area": "civil engg",
+      "studyType": "Bachelor",
+      "year" :4,
+      "score": "7.0",
+      "course": "B.Tech"
+        
+    }],
+   
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name":[ "Wildlife","gaming","BTS" ],
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+   
+    
+  }]
+}],
+}];
+
+
+  for (let data in myresume){
+      console.log(myresume[data]);
+  }
+  
+  
